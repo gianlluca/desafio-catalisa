@@ -1,41 +1,50 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
     <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Rick and Morty - Personagens</title>
+
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <script type="text/javascript" src="script.js" defer></script>
+
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
     </head>
     <body>
         <main>
             <section>
-                <div>
-                    <div>
-                        <img src="" alt="">
-                        <ul>
-                            <li>Nome:<p>Cronenberg Rick</p></li>
-                            <li>Espécie:<p>Cronenberg</p></li>
-                            <li>Está vivo?<p>unknown</p></li>
+                <div id="listCharacters">
+                    <div class="character">
+                        <img id="img1" class = "characterImage" src="" alt="">
+                        <ul class="characterData">
+                            <li>Nome:<p id="name1"></p></li>
+                            <li>Espécie:<p id="species1"></p></li>
+                            <li>Está vivo?<p id="charStatus1"></p></li>
                         </ul>
                     </div>
-                    <div>
-                        <img src="" alt="">
-                        <ul>
-                            <li>Nome:<p>Cronenberg Rick</p></li>
-                            <li>Espécie:<p>Cronenberg</p></li>
-                            <li>Está vivo?<p>unknown</p></li>
+                    <div class="character">
+                        <img id="img2" class = "characterImage" src="" alt="">
+                        <ul class="characterData">
+                            <li>Nome:<p id="name2"></p></li>
+                            <li>Espécie:<p id="species2"></p></li>
+                            <li>Está vivo?<p id="charStatus2"></p></li>
                         </ul>
                     </div>
-                    <div>
-                        <img src="" alt="">
-                        <ul>
-                            <li>Nome:<p>Cronenberg Rick</p></li>
-                            <li>Espécie:<p>Cronenberg</p></li>
-                            <li>Está vivo?<p>unknown</p></li>
+                    <div class="character">
+                        <img id="img3" class = "characterImage" src="" alt="">
+                        <ul class="characterData">
+                            <li>Nome:<p id="name3"></p></li>
+                            <li>Espécie:<p id="species3"></p></li>
+                            <li>Está vivo?<p id="charStatus3"></p></li>
                         </ul>
+                    </div>
                     </div>
                 </div>
-                <button>Gerar Novos Personagens</button>
+                <button id="requestNewCharacters">Gerar Novos Personagens</button>
             </section>
         </main>
     </body>
