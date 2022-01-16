@@ -37,20 +37,20 @@ function requestRandomCharacters(){
             "Content-type": 'application/json'
         }
     }).then((response) => response.json()).then((data) => {
-        for (let i = 0; i < charactersElem.length; i+=1) {
-            charactersElem[i].image.src = data[i].image
-            charactersElem[i].image.alt = data[i].name
-            charactersElem[i].name.innerHTML = data[i].name
-            charactersElem[i].species.innerHTML = data[i].species
+        for (let i = 0; i < charactersElem.length; i += 1) {
+            charactersElem[i].image.src = data[i].image;
+            charactersElem[i].image.alt = data[i].name;
+            charactersElem[i].name.innerHTML = data[i].name;
+            charactersElem[i].species.innerHTML = data[i].species;
 
             let isCharAlive = "Sim";
 
             if(data[i].status === "Dead"){
-                isCharAlive = "Não"
+                isCharAlive = "Não";
             }else if(data[i].status === "unknown"){
-                isCharAlive = "Desconhecido"
+                isCharAlive = "Desconhecido";
             }
-            charactersElem[i].charStatus.innerHTML = isCharAlive
+            charactersElem[i].charStatus.innerHTML = isCharAlive;
         }
     });
 }
